@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Input Element</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <form action="#">
+            <!-- The HTML <input> element is used to create interactive controls for web-based forms in order to accept data from the user -->
+            <label for="name">Name (4 to 8 characters):</label>
+            <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+
+            <!-- <input> types -->
+            <h2>&lt;input&gt; types</h2>
+            <!-- How an <input> works varies considerably depending on the value of its type attribute -->
+
+            <label for="button">Button</label>
+            <input type="button" value="Button">
+
+            <label for="checkbox">Checkbox</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+
+            <label for="datetime">Date time local (no timezone)</label>
+            <input type="datetime-local" name="datetime" id="datetime">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <label for="file">File</label>
+            <input type="file" name="file" id="file">
+
+            <!-- A control that is not displayed but whose value is submitted to the server. -->
+            <label for="hidden">Hidden</label>
+            <input type="hidden" name="hidden">
+
+            <!-- A graphical submit button -- displaying an image defined with the src attribute. The alt attribute displays if the image src is missing. -->
+            <label for="image">Image</label>
+            <input type="image" src="" alt="A graphical submit button">
+
+            <label for="month">Month with no time zone</label>
+            <input type="month" name="month" id="month">
+
+            <label for="number">Number</label>
+            <input type="number" name="number" id="number">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+
+            <label for="radio-on">Radio</label>
+            <input type="radio" name="radio" id="radio-on">
+            <input type="radio" name="radio" id="radio-of">
+
+            <label for="range">Range</label>
+            <input type="range" name="range" id="range">
+
+            <label for="reset">Reset (not recommended)</label>
+            <input type="reset" value="Reset">
+
+            <label for="search">Search</label>
+            <input type="search" name="search" id="search">
+
+            <label for="submit">Submit</label>
+            <input type="submit" value="Submit">
+
+            <label for="telephone">Telephone</label>
+            <input type="tel" name="telephone" id="telephone">
+
+            <label for="text">Text (default)</label>
+            <input type="text" name="text" id="text">
+
+            <label for="time">Time with no time zone</label>
+            <input type="time" name="time" id="time">
+
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
+
+            <label for="week">Week with no time zone</label>
+            <input type="week" name="week" id="week">
+
+            <label for="datetime">Date time with time zone (Obsolete)</label>
+            <input type="datetime" name="datetime" id="datetime">
+        </form>
+    </section>
+
+    <section>
+        <h2>Attributes</h2>
+        <table>
+            <thead>
+                <th>Attribute</th>
+                <th>Types</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>accept</td>
+                    <td>file</td>
+                    <td>Hint for expected file type in file upload</td>
+                </tr>
+                <tr>
+                    <td>alt</td>
+                    <td>image</td>
+                    <td>alt attribute for the image type. Required for accessibiltiy</td>
+                </tr>
+                <tr>
+                    <td>autocomplete</td>
+                    <td>all</td>
+                    <td>Hint for form autofill feature</td>
+                </tr>
+                <tr>
+                    <td>autofocus</td>
+                    <td>all</td>
+                    <td>Automatically focus the form control when the page is loaded</td>
+                </tr>
+                <tr>
+                    <td>capture</td>
+                    <td>file</td>
+                    <td>Media capture input method in file upload controls</td>
+                </tr>
+                <tr>
+                    <td>checked</td>
+                    <td>radio, checkbox</td>
+                    <td>Whether the command or control is checked</td>
+                </tr>
+                <tr>
+                    <td>dirname</td>
+                    <td>text, search</td>
+                    <td>Name of form field to use for sending the element's directionality in form submission</td>
+                </tr>
+                <tr>
+                    <td>disabled</td>
+                    <td>all</td>
+                    <td>Whether the form control is disabled</td>
+                </tr>
+                <tr>
+                    <td>form</td>
+                    <td>all</td>
+                    <td>Associates the control with a form element</td>
+                </tr>
+                <tr>
+                    <td>formaction</td>
+                    <td>image, submit</td>
+                    <td>URL to use for form submission</td>
+                </tr>
+                <tr>
+                    <td>formenctype</td>
+                    <td>image, submit</td>
+                    <td>Form data set encoding type to use for form submission</td>
+                </tr>
+                <tr>
+                    <td>formmethod</td>
+                    <td>image, submit</td>
+                    <td>HTTP method to use for form submission</td>
+                </tr>
+                <tr>
+                    <td>formnovalidate</td>
+                    <td>image, submit</td>
+                    <td>Bypass form control validation for form submission</td>
+                </tr>
+                <tr>
+                    <td>formtarget</td>
+                    <td>image, submit</td>
+                    <td>Browsing context for form submission</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>image</td>
+                    <td>Same as height attribute for &lt;img&gt;; vertical dimension</td>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>global</td>
+                    <td>Global attribute, which must be unique, used to identify the element when linking</td>
+                </tr>
+                <tr>
+                    <td>inputmode</td>
+                    <td>global</td>
+                    <td>Hint for selecting an input modality, such as the number keypad on dynamic keyboards.</td>
+                </tr>
+                <tr>
+                    <td>list</td>
+                    <td>almost all</td>
+                    <td>Value of the id attribute of the &lt;datalist&gt; of autocomplete options</td>
+                </tr>
+                <tr>
+                    <td>max</td>
+                    <td>numeric types</td>
+                    <td>Maximum value</td>
+                </tr>
+                <tr>
+                    <td>maxlength</td>
+                    <td>password, search, tel, text, url</td>
+                    <td>Maximum length (number of characters) of value</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td>numeric types</td>
+                    <td>Minimum value</td>
+                </tr>
+                <tr>
+                    <td>minlength</td>
+                    <td>password, search, tel, text, url</td>
+                    <td>Minimum length (number of characters) of value</td>
+                </tr>
+                <tr>
+                    <td>multiple</td>
+                    <td>email, file</td>
+                    <td>Boolean. Whether to allow multiple values</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>all</td>
+                    <td>Name of the input form control. Submitted with the form as part of a name/value pair.</td>
+                </tr>
+                <tr>
+                    <td>pattern</td>
+                    <td>password, text, tel</td>
+                    <td>Pattern (regular expression) the value must match to be valid</td>
+                </tr>
+                <tr>
+                    <td>placeholder</td>
+                    <td>password, search, tel, text, url</td>
+                    <td>content to be appear in the form control when the form control is empty</td>
+                </tr>
+                <tr>
+                    <td>readonly</td>
+                    <td>almost all</td>
+                    <td>Boolean. The value is not editable</td>
+                </tr>
+                <tr>
+                    <td>required</td>
+                    <td>almost all</td>
+                    <td>Boolean. A value is required or must be check for the form to be submittable</td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td></td>
+                    <td>Size of the control</td>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>image</td>
+                    <td>Same as src attribute for &lt;img&gt;; address of image resource</td>
+                </tr>
+                <tr>
+                    <td>step</td>
+                    <td>numeric types</td>
+                    <td>Incremental values that are valid.</td>
+                </tr>
+                <tr>
+                    <td>tabindex</td>
+                    <td>global</td>
+                    <td>Integer. Position of focus order in list of elements that are focusable via tabbing</td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                    <td>global</td>
+                    <td>String. Text representing advisory information related to the element it belongs to.</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>all</td>
+                    <td>Type of input form control</td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>all</td>
+                    <td>Current value of the form control. Submitted with the form as part of a name/value pair.</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>image</td>
+                    <td>Same as width attribute for &lt;img&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+<script src="./app.js"></script>
+</html>
