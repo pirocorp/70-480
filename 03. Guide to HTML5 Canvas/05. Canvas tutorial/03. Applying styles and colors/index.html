@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <h2>Colors</h2>
+        <canvas id="colors" width="150" height="150">
+            Colors
+        </canvas>
+    </section>
+
+    <section>
+        <h2>A strokeStyle example</h2>
+        <canvas id="stroke-style" width="150" height="150">
+            A strokeStyle example
+        </canvas>
+    </section>
+
+    <section>
+        <h2>Transparency</h2>
+        <canvas id="transparency" width="150" height="150">
+            Transparency
+        </canvas>
+    </section>
+
+    <section>
+        <h2>Transparency with RGBA</h2>
+        <canvas id="transparency-rgba" width="150" height="150">
+            Transparency with RGBA
+        </canvas>
+    </section>
+
+    <section>
+        <h2>A lineWidth example</h2>
+        <canvas id="line-width" width="150" height="150">
+            A lineWidth example
+        </canvas>
+    </section>
+
+    <section>
+        <h2>A lineCap example</h2>
+        <canvas id="line-cap" width="150" height="150">
+            A lineCap example
+        </canvas>
+    </section>
+
+    <section>
+        <h2>A lineJoin example</h2>
+        <canvas id="line-join" width="150" height="150">
+            A lineJoin example
+        </canvas>
+    </section>
+
+    <section>
+        <h2>A demo of the miterLimit property</h2>
+        <canvas id="miter-limit" width="150" height="150">
+            A demo of the miterLimit property
+        </canvas>
+        <form onsubmit="return draw();">
+            <label>Miter limit</label>
+            <input type="number" size="3" value="10" id="miterLimit"/>
+            <input type="submit" value="Redraw"/>
+        </form>
+    </section>
+
+    <section>
+        <h2>Using line dashes</h2>
+        <canvas id="line-dashes" width="150" height="150">
+            Using line dashes
+        </canvas>
+    </section>
+
+    <section>
+        <h2>A createLinearGradient example</h2>
+        <canvas id="linear-gradient" width="150" height="150">
+            A createLinearGradient example
+        </canvas>
+    </section>
+
+    <section>
+        <h2>A createRadialGradient example</h2>
+        <canvas id="radial-gradient" width="150" height="150">
+            A createRadialGradient example
+        </canvas>
+    </section>
+
+    <section>
+        <h2>A createPattern example</h2>
+        <canvas id="create-pattern" width="150" height="150">
+            A createPattern example
+        </canvas>
+    </section>
+
+    <section>
+        <h2>A shadowed text example</h2>
+        <canvas id="shadowed-text" width="150" height="150">
+            A shadowed text example
+        </canvas>
+    </section>
+
+    <section>
+        <h2>Canvas fill rules</h2>
+        <canvas id="fill-rules" width="150" height="150">
+            Canvas fill rules
+        </canvas>
+    </section>
+</body>
+<script src="./app.js"></script>
+</html>
