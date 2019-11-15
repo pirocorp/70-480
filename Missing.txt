@@ -1,0 +1,1 @@
+web worker, this, Inheritance and the prototype chain, call() , apply() and bind() in JavaScript, WebSocket API
