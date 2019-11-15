@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paths</title>
+    <style>
+        svg {
+            border: 1px solid black;
+        }
+
+        img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Line commands</h2>
+
+        <article>
+            <h3>Move To</h3>
+            <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+
+                <path d="M10 10"/>
+                
+                <!-- Points -->
+                <circle cx="10" cy="10" r="2" fill="red"/>
+                
+            </svg>
+        </article>
+
+        <article>
+            <h3>Line To</h3>
+
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  
+                <path d="M 10 10 H 90 V 90 H 10 L 10 10"/>
+              
+                <!-- Points -->
+                <circle cx="10" cy="10" r="2" fill="red"/>
+                <circle cx="90" cy="90" r="2" fill="red"/>
+                <circle cx="90" cy="10" r="2" fill="red"/>
+                <circle cx="10" cy="90" r="2" fill="red"/>
+              
+              </svg>
+        </article>
+
+        <article>
+            <h3>Close Path</h3>
+
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  
+                <path d="M 10 10 H 90 V 90 H 10 Z" fill="transparent" stroke="black"/>
+              
+                <!-- Points -->
+                <circle cx="10" cy="10" r="2" fill="red"/>
+                <circle cx="90" cy="90" r="2" fill="red"/>
+                <circle cx="90" cy="10" r="2" fill="red"/>
+                <circle cx="10" cy="90" r="2" fill="red"/>
+              
+            </svg>
+        </article>
+
+        <article>
+            <h3>Relative commands</h3>
+
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  
+                <path d="M 10 10 h 80 v 80 h -80 Z" fill="transparent" stroke="black"/>
+              
+                <!-- Points -->
+                <circle cx="10" cy="10" r="2" fill="red"/>
+                <circle cx="90" cy="90" r="2" fill="red"/>
+                <circle cx="90" cy="10" r="2" fill="red"/>
+                <circle cx="10" cy="90" r="2" fill="red"/>
+              
+            </svg>
+        </article>
+    </section>
+    
+    <section>
+        <h2>Curve commands</h2>
+
+        <article>
+            <h3>Bezier Cubic Curve</h3>
+            <svg width="190" height="160" xmlns="http://www.w3.org/2000/svg">
+
+                <path d="M 10 10 C 20 20, 40 20, 50 10" stroke="black" fill="transparent"/>
+                <path d="M 70 10 C 70 20, 120 20, 120 10" stroke="black" fill="transparent"/>
+                <path d="M 130 10 C 120 20, 180 20, 170 10" stroke="black" fill="transparent"/>
+                
+                <path d="M 10 60 C 20 80, 40 80, 50 60" stroke="black" fill="transparent"/>
+                <path d="M 70 60 C 70 80, 110 80, 110 60" stroke="black" fill="transparent"/>
+                <path d="M 130 60 C 120 80, 180 80, 170 60" stroke="black" fill="transparent"/>
+                
+                <path d="M 10 110 C 20 140, 40 140, 50 110" stroke="black" fill="transparent"/>
+                <path d="M 70 110 C 70 140, 110 140, 110 110" stroke="black" fill="transparent"/>
+                <path d="M 130 110 C 120 140, 180 140, 170 110" stroke="black" fill="transparent"/>
+              
+                <circle cx="10" cy="10" r="2" fill="red"/>
+                <circle cx="20" cy="20" r="2" fill="red"/>
+                <path d="M 10 10 L 20 20" stroke="red" fill="transparent"/>
+
+                <circle cx="50" cy="10" r="2" fill="red"/>
+                <circle cx="40" cy="20" r="2" fill="red"/>
+                <path d="M 50 10 L 40 20" stroke="red" fill="transparent"/>
+
+                <circle cx="70" cy="10" r="2" fill="red"/>
+                <circle cx="70" cy="20" r="2" fill="red"/>
+                <path d="M 70 10 L 70 20" stroke="red" fill="transparent"/>
+
+                <circle cx="120" cy="10" r="2" fill="red"/>
+                <circle cx="120" cy="20" r="2" fill="red"/>
+                <path d="M 120 10 L 120 20" stroke="red" fill="transparent"/>
+
+                <circle cx="130" cy="10" r="2" fill="red"/>
+                <circle cx="125" cy="20" r="2" fill="red"/>
+                <path d="M 130 10 L 125 20" stroke="red" fill="transparent"/>
+
+                <circle cx="170" cy="10" r="2" fill="red"/>
+                <circle cx="180" cy="20" r="2" fill="red"/>
+                <path d="M 170 10 L 180 20" stroke="red" fill="transparent"/>
+
+                <circle cx="10" cy="60" r="2" fill="red"/>
+                <circle cx="20" cy="80" r="2" fill="red"/>
+                <path d="M 10 60 L 20 80" stroke="red" fill="transparent"/>
+
+                <circle cx="50" cy="60" r="2" fill="red"/>
+                <circle cx="40" cy="80" r="2" fill="red"/>
+                <path d="M 50 60 L 40 80" stroke="red" fill="transparent"/>
+
+                <circle cx="70" cy="60" r="2" fill="red"/>
+                <circle cx="70" cy="80" r="2" fill="red"/>
+                <path d="M 70 60 L 70 80" stroke="red" fill="transparent"/>
+
+                <circle cx="110" cy="60" r="2" fill="red"/>
+                <circle cx="110" cy="80" r="2" fill="red"/>
+                <path d="M 110 60 L 110 80" stroke="red" fill="transparent"/>
+
+                <circle cx="130" cy="60" r="2" fill="red"/>
+                <circle cx="120" cy="80" r="2" fill="red"/>
+                <path d="M 130 60 L 120 80" stroke="red" fill="transparent"/>
+
+                <circle cx="170" cy="60" r="2" fill="red"/>
+                <circle cx="180" cy="80" r="2" fill="red"/>
+                <path d="M 170 60 L 180 80" stroke="red" fill="transparent"/>
+
+                <circle cx="10" cy="110" r="2" fill="red"/>
+                <circle cx="20" cy="140" r="2" fill="red"/>
+                <path d="M 10 110 L 20 140" stroke="red" fill="transparent"/>
+
+                <circle cx="50" cy="110" r="2" fill="red"/>
+                <circle cx="40" cy="140" r="2" fill="red"/>
+                <path d="M 50 110 L 40 140" stroke="red" fill="transparent"/>
+
+                <circle cx="70" cy="110" r="2" fill="red"/>
+                <circle cx="70" cy="140" r="2" fill="red"/>
+                <path d="M 70 110 L 70 140" stroke="red" fill="transparent"/>
+
+                <circle cx="110" cy="110" r="2" fill="red"/>
+                <circle cx="110" cy="140" r="2" fill="red"/>
+                <path d="M 110 110 L 110 140" stroke="red" fill="transparent"/>
+
+                <circle cx="130" cy="110" r="2" fill="red"/>
+                <circle cx="120" cy="140" r="2" fill="red"/>
+                <path d="M 130 110 L 120 140" stroke="red" fill="transparent"/>
+
+                <circle cx="170" cy="110" r="2" fill="red"/>
+                <circle cx="180" cy="140" r="2" fill="red"/>
+                <path d="M 170 110 L 180 140" stroke="red" fill="transparent"/>
+              </svg>
+        </article>
+
+        <article>
+            <h3>Bezier Quadratic Curve</h3>
+            <svg width="190" height="160" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 10 80 Q 95 10 180 80" stroke="black" fill="transparent"/>
+            
+                <circle cx="10" cy="80" r="2" fill="red"/>
+                <circle cx="95" cy="10" r="2" fill="red"/>
+                <circle cx="180" cy="80" r="2" fill="red"/>
+                <path d="M 10 80 L 95 10" stroke="red" fill="transparent"/>
+                <path d="M 180 80 L 95 10" stroke="red" fill="transparent"/>
+            </svg>  
+        </article>
+    </section>
+
+    <section>
+        <h2>Arcs</h2>
+
+        <article>
+            <h3>x-axis-rotation Example</h3>
+            <!-- A rx ry x-axis-rotation large-arc-flag sweep-flag x y -->
+            <svg width="320" height="320" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 10 315
+                         L 110 215
+                         A 30 50 0 0 1 162.55 162.45
+                         L 172.55 152.45
+                         A 30 50 -45 0 1 215.1 109.9
+                         L 315 10" stroke="black" fill="green" stroke-width="2" fill-opacity="0.5"/>
+              </svg>
+        </article>
+
+        <article>
+            <h3>large-arc-flag and sweep-flag Example</h3>
+            <img src="https://developer.mozilla.org/@api/deki/files/345/=SVGArcs_Flags.png" alt="">
+            <svg width="325" height="325" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 80 80
+                         A 45 45, 0, 0, 0, 125 125
+                         L 125 80 Z" fill="green"/>
+                <path d="M 230 80
+                         A 45 45, 0, 1, 0, 275 125
+                         L 275 80 Z" fill="red"/>
+                <path d="M 80 230
+                         A 45 45, 0, 0, 1, 125 275
+                         L 125 230 Z" fill="purple"/>
+                <path d="M 230 230
+                         A 45 45, 0, 1, 1, 275 275
+                         L 275 230 Z" fill="blue"/>
+              </svg>
+        </article>
+    </section>
+</body>
+</html>
