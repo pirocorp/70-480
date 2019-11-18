@@ -1,0 +1,4 @@
+Inheritance and the prototype chain, 
+
+this, 
+call() , apply() and bind() in JavaScript
