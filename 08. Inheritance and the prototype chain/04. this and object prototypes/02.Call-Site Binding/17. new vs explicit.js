@@ -1,0 +1,14 @@
+function foo(something) {
+    this.a = something;
+}
+
+var obj1 = {};
+
+var bar = foo.bind(obj1);
+bar(2);
+console.log(obj1.a); // 2
+//bar is hard-bound against obj1, but new bar(3) did not change
+//obj1.a to 3 as we would have expected.
+var baz = new bar(3);
+console.log(obj1.a); // 2
+console.log(baz.a); // 3
