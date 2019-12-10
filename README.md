@@ -59,18 +59,6 @@ Programming in HTML5 with JavaScript and CSS3
 
 ### Intro
 
-This study guide is what I created prior to taking the Microsoft 70-480 test. There is a lot of shorthand and the code samples are not complete. I studied and read a couple of books prior to making this study guide. This guide does not include a lot of basic CSS, HTML, or JavaScript concepts. If you haven't learned about a topic in this study guide or [the Microsoft 70-480 Skills Measured section](https://www.microsoft.com/learning/en-us/exam-70-480.aspx#skills) I would recommend trying one of the books or resources below.
-
-Books I read
-
- - [JavaScript: The Good Parts by Douglas Crockford](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742)
- - [Training Guide Programming in HTML5 with JavaScript and CSS3 by Glenn Johnson](http://www.amazon.com/Training-Guide-Programming-JavaScript-Microsoft/dp/0735674388)
-
-Resources I used
-
- - [Mozilla Developer Network](https://developer.mozilla.org)
- - [CSS Tricks](http://css-tricks.com/)
-
 ### CSS 
 
 #### Standard Selectors
